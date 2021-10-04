@@ -6,6 +6,6 @@
  # shell: npm install /var/lib/jenkins/workspace/devops
 #buid project
 - name: build app
-  shell: ng build --prod
+  shell: ng build --prod && chmod 777 -R /var/lib/jenkins/workspace/devops/dist/
 
 
