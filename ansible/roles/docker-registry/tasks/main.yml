@@ -10,6 +10,6 @@
 - name: Tag and push to docker hub
   docker_image:
     name: devops:latest
-    repository: aminelimem/devops
+    repository: ami123k/devops
     push: yes
     source: local
