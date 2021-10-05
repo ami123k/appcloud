@@ -1,7 +1,5 @@
 ---
 # tasks file for docker-registry
----
-# tasks file for docker-registry
 - name: log into docker hub registry
   docker_login:
     email: "mohamedamine.limem@esprit.tn"
