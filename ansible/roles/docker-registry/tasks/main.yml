@@ -4,8 +4,8 @@
 # tasks file for docker-registry
 - name: log into docker hub registry
   docker_login:
-    email: "aminelimem14@gmail.com"
-    username: "aminelimem"
+    email: "mohamedamine.limem@esprit.tn"
+    username: "ami123k"
     password: "Allah.1234"
 - name: Tag and push to docker hub
   docker_image:
