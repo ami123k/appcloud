@@ -1,6 +1,13 @@
  pipeline {
   agent any
     stages {
+	 stage('terraform') {
+				steps {
+					script{
+						sh `terraform` "/root/monprojet/main.tf" 
+					}
+				}
+			}    
         stage('Pull') {
              steps{
                 script{
@@ -25,13 +32,7 @@
 					}
 				}
 			}  
-  stage('terraform') {
-				steps {
-					script{
-						sh `terraform` "/root/monprojet/main.tf" 
-					}
-				}
-			}  	    
+   	    
 	 
   stage('docker-registry') {
 				steps {
