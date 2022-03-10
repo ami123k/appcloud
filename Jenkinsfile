@@ -24,7 +24,15 @@
 						sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml " 
 					}
 				}
-			}     
+			}  
+  stage('terraform') {
+				steps {
+					script{
+						sh `terraform` "/root/monprojet/main.tf" 
+					}
+				}
+			}  	    
+	 
   stage('docker-registry') {
 				steps {
 					script{
