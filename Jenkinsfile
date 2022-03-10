@@ -1,13 +1,6 @@
  pipeline {
   agent any
     stages {
-	 stage('terraform') {
-				steps {
-					script{
-						sh `terraform` "/root/monprojet/main.tf" 
-					}
-				}
-			}    
         stage('Pull') {
              steps{
                 script{
