@@ -6,7 +6,7 @@
                 script{
                     checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                         userRemoteConfigs: [[
-                            credentialsId: '67c2744e-c2d9-4b17-9f12-35c2d4eaac32',
+                            credentialsId: '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',
                             url: 'https://github.com/ami123k/appcloud.git']]])
                 }
             }
