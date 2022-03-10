@@ -11,13 +11,7 @@
                 }
             }
         }
-    stage('terraform') {
-				steps {
-					script{
-						sh "terraform init /root/monprojet/main.tf" 
-					}
-				}
-			} 
+   
     stage('Build') {
 				steps {
 					script{
